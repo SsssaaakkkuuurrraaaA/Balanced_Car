@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "oled.h": "c",
+        "tb6612.h": "c",
+        "car_debug.h": "c",
+        "mathematics.h": "c"
+    }
+}
