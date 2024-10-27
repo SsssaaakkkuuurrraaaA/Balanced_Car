@@ -35,9 +35,9 @@ void Car_GetAngle(void)
 	
 	Filter_Kalman_Angle_Value = Filter_Kalman(Acc_Angle, Gyro_Y);
 	
-	OLED_ShowSignFloatNum(1, 1, Acc_Angle, 1);
-	OLED_ShowSignFloatNum(2, 1, Gyro_Y, 1);
-	OLED_ShowSignFloatNum(3, 1, Filter_Kalman_Angle_Value, 1);
+	// OLED_ShowSignFloatNum(1, 1, Acc_Angle, 1);
+	// OLED_ShowSignFloatNum(2, 1, Gyro_Y, 1);
+	// OLED_ShowSignFloatNum(3, 1, Filter_Kalman_Angle_Value, 1);
 }
 
 void Car_PID(void)
@@ -60,8 +60,8 @@ void Car_PID(void)
 	Turn_Out = PID_Turn(Turn_Kp, Parameter_Val.GyroZ);
 	
 	/* 4.叠加PID结果，作用到电机上 */
-	PWM1 = Balance_Out;// + Velocity_Out + Turn_Out;
-	PWM2 = Balance_Out;// + Velocity_Out - Turn_Out;
+	PWM1 = Balance_Out + Velocity_Out + Turn_Out;
+	PWM2 = Balance_Out + Velocity_Out - Turn_Out;
 	
 	Motor_SetPWM1(PWM1);
 	Motor_SetPWM2(PWM2);

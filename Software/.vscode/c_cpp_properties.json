@@ -3,11 +3,11 @@
         {
             "name": "Target 1",
             "includePath": [
-                "e:\\Project\\STM32 Balance-car\\Software\\Start",
-                "e:\\Project\\STM32 Balance-car\\Software\\User",
-                "e:\\Project\\STM32 Balance-car\\Software\\Library",
-                "e:\\Project\\STM32 Balance-car\\Software\\System",
-                "e:\\Project\\STM32 Balance-car\\Software\\Hardware",
+                "e:\\GitHub\\Balance-car\\Balanced_Car\\Software\\Start",
+                "e:\\GitHub\\Balance-car\\Balanced_Car\\Software\\User",
+                "e:\\GitHub\\Balance-car\\Balanced_Car\\Software\\Library",
+                "e:\\GitHub\\Balance-car\\Balanced_Car\\Software\\System",
+                "e:\\GitHub\\Balance-car\\Balanced_Car\\Software\\Hardware",
                 "E:\\software\\Keil\\keil5\\keil_mdk\\ARM\\ARMCC\\include",
                 "E:\\software\\Keil\\keil5\\keil_mdk\\ARM\\ARMCC\\include\\rw"
             ],

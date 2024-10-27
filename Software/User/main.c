@@ -3,7 +3,7 @@
 int main(void)
 {
 	// 初始化
-	OLED_Init();
+	// OLED_Init();
 	
 	UART_Init();
 	
